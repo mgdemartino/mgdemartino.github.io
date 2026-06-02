@@ -200,6 +200,10 @@ p {
 
 /* Responsive */
 @media (max-width: 720px) {
+    .container {
+        padding: 0 28px;
+    }
+
     .header-inner {
         flex-direction: column;
         align-items: flex-start;
