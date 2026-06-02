@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithms – Marcelo De Martino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">Marcelo De Martino</a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="algorithms.html" class="active">Algorithms</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Algorithms</h1>
+
+                <div class="algorithm-entry">
+                    <h2>HayashiWeyl</h2>
+                    <p class="repo-link">
+                        <a href="https://github.com/mgdemartino/HayashiWeyl" target="_blank" rel="noopener noreferrer">
+                            github.com/mgdemartino/HayashiWeyl
+                        </a>
+                    </p>
+                    <p><strong>Description:</strong> A Python implementation of the Hayashi-style quantized Weyl algebra in n variables.</p>
+                    <p><strong>Context:</strong> Linked to my research projects on quantized Howe dualities.</p>
+                </div>
+
+                <div class="algorithm-entry">
+                    <h2>SphAutSpec</h2>
+                    <p class="repo-link">
+                        <a href="https://github.com/mgdemartino/SphAutSpec" target="_blank" rel="noopener noreferrer">
+                            github.com/mgdemartino/SphAutSpec
+                        </a>
+                    </p>
+                    <p><strong>Description:</strong> Codes (Maple) to perform combinatorial computations with root systems towards the spherical automorphic spectrum.</p>
+                    <p><strong>Context:</strong> Linked to my research project on the automorphic spectrum.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Marcelo De Martino</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

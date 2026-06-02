@@ -1,0 +1,230 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography and colors */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    color: #14324a;
+    background-color: #f5fbff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    color: #1b6fa8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #123047;
+    margin-bottom: 0.6em;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(27, 111, 168, 0.25);
+    padding-bottom: 0.4rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+p {
+    margin-bottom: 0.85em;
+}
+
+/* Layout helpers */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and navigation */
+.site-header {
+    background: #cce4ff;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(27, 111, 168, 0.12);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.logo a {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1b6fa8;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.main-nav a {
+    margin-left: 20px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #1b6fa8;
+    padding-bottom: 2px;
+}
+
+.main-nav a:hover {
+    color: #0f4c81;
+    text-decoration: none;
+}
+
+.main-nav a.active {
+    color: #0f4c81;
+    border-bottom: 2px solid #1b6fa8;
+}
+
+/* Sections */
+.section {
+    padding: 48px 0 64px;
+}
+
+/* Hero / Home */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 2 1 320px;
+}
+
+.hero-text h1 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hero-photo {
+    flex: 1 1 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-placeholder {
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+    border: 2px dashed rgba(27, 111, 168, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #1b6fa8;
+    background: linear-gradient(135deg, #ffffff 0%, #e5f2ff 100%);
+}
+
+
+.hero-photo img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Publications */
+.publications-list p {
+    text-indent: -1.8em;
+    padding-left: 1.8em;
+}
+
+/* Algorithms */
+.algorithm-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(27, 111, 168, 0.1);
+}
+
+.algorithm-entry:last-child {
+    border-bottom: none;
+}
+
+.algorithm-entry h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.repo-link {
+    margin-bottom: 0.5em;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid rgba(27, 111, 168, 0.12);
+    background-color: #cce4ff;
+}
+
+.footer-inner {
+    padding: 18px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #566b82;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        margin-top: 10px;
+    }
+
+    .main-nav a {
+        margin-left: 0;
+        margin-right: 16px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-photo {
+        order: -1;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Marcelo De Martino</title>
-    <style>
-        body { 
-            background-color: #0b0f19; 
-            color: #38bdf8; 
-            font-family: monospace; 
-            padding: 60px; 
-            display: flex;
-            align-items: center;
-            height: 50vh;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Under Construction</h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">Marcelo De Martino</a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="algorithms.html">Algorithms</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container hero">
+                <div class="hero-text">
+                    <h1>About Me</h1>
+                    <p>
+                        Currently, I am an Assistant Professor of Mathematics and Statistics at Forward College Lisbon, where I have been
+                        faculty since 2024. My research bridges representation theory, harmonic analysis, and algebraic structures, and I am currently exploring potential connections with Quantum Information Theory.
+                    </p>
+                    <p>
+                        My academic journey includes a BOF Postdoctoral Fellowship at Ghent University (2021–2024), where I held
+                        a research-only appointment focusing on algebraic dualities and deformations. Prior to that, from 2016 to
+                        2021, I was a Postdoctoral Research Assistant at the University of Oxford, where I conducted research in
+                        Dirac operators, harmonic analysis, and the Langlands Programme, alongside teaching tutorials at
+                        Somerville and Lincoln Colleges.
+                    </p>
+                    <p>
+                        I completed my PhD in 2016 as a joint degree from the University of Amsterdam and Aix-Marseille
+                        University, under the supervision of E. Opdam and V. Heiermann.
+                    </p>
+                    <p>
+                        You can explore my latest research interests, papers, and open-source implementations using the menus
+                        above.
+                    </p>
+                </div>
+                <div class="hero-photo">
+                    <img src="portrait.jpeg" alt="Marcelo De Martino">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Marcelo De Martino</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
