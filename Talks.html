@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talks – Marcelo De Martino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="index.html">Marcelo De Martino</a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="talks.html" class="active">Talks</a>
+                <a href="algorithms.html">Algorithms</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Talks</h1>
+
+                <div class="talk-entry">
+                    <h2>A Quantized Metaplectic Howe Duality in Rank One</h2>
+                    <p class="talk-meta">Q-SPHERE, Nijmegen, The Netherlands — June 2026</p>
+                    <p><strong>Abstract:</strong>   Dirac-type operators and Howe dualities provide a uniform approach to
+decomposition problems and symmetry algebras in the orthogonal and symplectic settings.
+Quantizing these structures is subtle, often convention-dependent, and in the orthogonal Dirac
+setting competing frameworks do not currently agree.
+In this talk I focus on the symplectic (metaplectic) Howe duality in the first nontrivial case, rank
+one, and present an explicit and computable quantization, based on joint work with M. Brito. The
+main outcome is a clean quantum duality in which both sides are Drinfeld–Jimbo sl(2)-type
+quantum groups (with different deformation parameters), realized via Hayashi’s deformed Weyl
+algebra. I will outline the resulting quantum analogues of the classical realization, Fischer-type
+structure, monogenics, and first-order symmetries, and conclude with the main obstacles to
+extending the construction beyond rank one.</p>
+                    <p><a href="TalkNotes/MDEMARTINO_Talk-Nijmegen.pdf" target="_blank">Notes (PDF)</a></p>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Marcelo De Martino</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
